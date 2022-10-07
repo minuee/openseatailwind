@@ -1,0 +1,492 @@
+/* header */
+.hover-trigger .hover-target {
+    display: none;
+}
+
+.hover-trigger:hover .hover-target {
+    display: block;
+}
+
+.hover-target:hover .hover-target {
+    display: block;
+}
+
+.menu-item-drop {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    /* min-height: 60px; */
+    color: rgb(80, 80, 80);    
+}
+
+.menu-item-drop.addOption{
+    z-index: 997;
+    background-color: white;
+    width: '100%';
+  }
+
+.menu-addOption{
+    border-bottom: 1px solid #adadad;    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.menu-addOption:last-child {
+    border-bottom: 1px solid #ffffff;    
+}
+
+.menu-item:hover {
+    color :rgb(69, 126, 225); 
+  }
+
+/*  여기서 부터는 create*/
+.mt20 { 
+    margin-top: 20px;
+}
+.pl20 {
+    padding-left: 20px;
+}
+
+.liner {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mainset100 {    
+    width: 100%;    
+    margin: 0;
+    height: 50vw;
+    overflow: hidden;
+    min-width: 1024px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: #222222;
+}
+
+.mainset{    
+    width: 100%;    
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    min-width: 1024px;    
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: #222222;
+}
+
+.mainWrap {    
+    width: 1024px;
+    padding: 20px;
+}
+
+.inputWrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.companyWrap {
+    position: relative;
+    width: 100%;
+    height: 100%;    
+    margin-bottom: 10px;
+}
+
+.coinTextWrap {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    
+}
+
+.baseInput { 
+    width: 100%;
+    padding-left:10px;
+    min-width: 400px;
+    height: 43px;
+    background-color: #555555;
+    border: none;
+    font-size: 14pt;    
+    font-family: "Nunito Sans";    
+    outline: solid 1px #000000;
+    border-radius: 5px;
+}
+.baseInput.addFlexRaw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    
+}
+
+.baseInput:focus {
+    background-color: gray;
+}
+.select:focus {
+    background-color: white;
+}
+select {
+	appearance: none;
+}
+.baseTextarea { 
+    width: 100%;
+    min-width: 400px;    
+    min-height: 100px;
+    padding-top: 5px;
+    padding-left:10px;
+    padding-right: 10px;    
+    background-color: #555555;
+    border: none;
+    font-size: 14pt;    
+    font-family: "Nunito Sans";    
+    outline: solid 1px #000000;
+    border-radius: 5px;
+}
+
+.baseTextarea:focus {
+    background-color: gray;
+}
+input::placeholder {
+    color: #ffffff;
+    font-style: italic;
+}
+textarea::placeholder {
+    color: #ffffff;
+    font-style: italic;
+}
+.imageWrap { 
+    width: 360px;
+    height: 250px;
+    border : dashed 2px #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.iconImage {
+    width: 60px;
+    height: 45px;
+}
+.coinIcon {
+    width: 32px;
+    height: 26px;
+}
+
+.mainTitle {
+    font-size: 30px;    
+    margin-top: 0px;    
+    font-weight: bold;
+    color:#ffffff;
+}
+.coinText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 13px;    
+    line-height: 16px;
+    font-weight: bold;
+    color:#ffffff; 
+
+}
+
+.fixedArrow {
+    position:absolute;
+    right:10px;
+    top:0;
+    width: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.arrowIcon {
+    width: 20px;    
+}
+.redText {
+    color:red;
+}
+.requiredText {
+    font-size: 13px;    
+    font-weight: 600;
+    color:gray; 
+}
+
+.menuText {
+    font-size: 15px;    
+    font-weight: bold;
+    color:#ffffff; 
+}
+
+.menuTextS {
+    font-size: 13px;
+    font-weight: 300;
+    color:#ffffff; 
+}
+
+.requiredError {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;    
+    font-weight: bold;
+    color:red; 
+}
+
+.sendButtonWrap {
+    width:100%;
+    margin-top: 20px;
+}
+
+.sendButton {
+    width: 100px;
+    height: 50px;    
+    border-radius: 5px;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.statsCommonWrap {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #555555;
+}
+.statsCommonWrap > .statsIconWrap {
+    width: 5%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statsCommonWrap > .statsTitleWrap {
+    width: 85%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.statsCommonWrap > .statsButtonWrap {
+    width: 10%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statsPlusButton {
+    width: 50px;
+    padding: 10px;
+    background-color:#333;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.react-switch-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  .react-switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    background: grey;
+    border-radius: 100px;
+    position: relative;
+    transition: background-color .2s;
+  }
+
+  .react-switch-label-on {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    background: rgb(69, 126, 225);
+    border-radius: 100px;
+    position: relative;
+    transition: background-color .2s;
+  }
+  
+  
+  .react-switch-label .react-switch-button {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 45px;
+    transition: 0.2s;
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+  }
+
+  .react-switch-label-on .react-switch-button {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 45px;
+    transition: 0.2s;
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+  }
+  
+  
+  .react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+    left: calc(100% - 4px);
+    transform: translateX(-100%);
+    
+  }
+  
+  .react-switch-label:active .react-switch-button {
+    width: 50px;
+  }
+
+  .accessbutton{
+    width: 200px;
+    color:#ffffff
+}
+
+
+/* 여기서부터 ../stat/collection.js */
+.secondComponent5 {    
+    padding-top: 30px;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #555555;
+}
+.secondComponentInside {
+    width: 100%;
+    max-width: min(1024px, 100% - 80px);
+    box-sizing: border-box;
+    display: block;
+}
+.firstContent5 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: 600;
+    color:#ffffff;
+}
+.firstContentBlue {
+    font-size: 25px;
+    margin-bottom: 8px;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: 600;
+    color:blue
+}
+
+.secondContent {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 10px;
+    color: rgb(112, 122, 131);
+}
+
+.thirdContent {
+    min-width: 800px;
+    background: url(https://static.opensea.io/gas-free/video-background.svg) center center / contain no-repeat;
+    padding: 40px 100px 30px;
+    box-sizing: border-box;
+    display: block;
+}
+.thirdContent2 {
+    font-weight: 500;
+    font-size: 11px;
+    color: rgb(112, 122, 131);
+    text-align: center;
+}
+
+.contentWrap {
+    width: 100%;
+    margin-bottom: 70px;
+    margin-top: 50px;    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.itemWrap2222 {    
+    width: 450px;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.logoimage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.iconimage {
+    width: 10px;
+    height: 11px;    
+    margin-right: 10px;
+}
+.itemTextWrap2 {
+    width: calc(70% - 60px);
+    margin-left: 20px;
+    text-align: left;
+}
+.itemTextWrap3 {
+    width: calc(30% - 60px);
+    margin-left: 20px;
+    text-align: left;
+}
+
+.itemText2 {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    color:#ffffff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.itemText3 {
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: bold;
+    color:gray;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
